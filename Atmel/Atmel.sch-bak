@@ -1,0 +1,616 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328-AU U?
+U 1 1 5F1FB344
+P 1800 2400
+F 0 "U?" H 1800 811 50  0000 C CNN
+F 1 "ATmega328-AU" H 1800 720 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 1800 2400 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1800 2400 50  0001 C CNN
+	1    1800 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2400 1800 2    50   Input ~ 0
+XTAL1
+Text GLabel 2400 1900 2    50   Input ~ 0
+XTAL2
+$Comp
+L power:GND #PWR?
+U 1 1 5F1FD521
+P 1800 3900
+F 0 "#PWR?" H 1800 3650 50  0001 C CNN
+F 1 "GND" H 1805 3727 50  0000 C CNN
+F 2 "" H 1800 3900 50  0001 C CNN
+F 3 "" H 1800 3900 50  0001 C CNN
+	1    1800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 5F1FDA54
+P 4600 1850
+F 0 "Y?" H 4794 1896 50  0000 L CNN
+F 1 "YSX321SL" H 4794 1805 50  0000 L CNN
+F 2 "" H 4600 1850 50  0001 C CNN
+F 3 "~" H 4600 1850 50  0001 C CNN
+	1    4600 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 1850 2    50   Input ~ 0
+XTAL1
+Text GLabel 3950 1850 0    50   Input ~ 0
+XTAL2
+Wire Wire Line
+	5150 1850 4750 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5F1FED31
+P 4600 2250
+F 0 "#PWR?" H 4600 2000 50  0001 C CNN
+F 1 "GND" H 4605 2077 50  0000 C CNN
+F 2 "" H 4600 2250 50  0001 C CNN
+F 3 "" H 4600 2250 50  0001 C CNN
+	1    4600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2200 4600 2150
+Wire Wire Line
+	4600 1650 4600 1550
+Wire Wire Line
+	4600 1550 4900 1550
+Wire Wire Line
+	4900 2150 4600 2150
+Connection ~ 4600 2150
+Wire Wire Line
+	4600 2050 4600 2150
+Wire Wire Line
+	4900 1550 4900 2150
+$Comp
+L Device:C C?
+U 1 1 5F201878
+P 5150 2000
+F 0 "C?" H 5265 2046 50  0000 L CNN
+F 1 "22p" H 5265 1955 50  0000 L CNN
+F 2 "" H 5188 1850 50  0001 C CNN
+F 3 "~" H 5150 2000 50  0001 C CNN
+	1    5150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1850 5150 1850
+Connection ~ 5150 1850
+Wire Wire Line
+	5150 2150 4900 2150
+Connection ~ 4900 2150
+$Comp
+L power:+5V #PWR?
+U 1 1 5F204D0C
+P 1800 650
+F 0 "#PWR?" H 1800 500 50  0001 C CNN
+F 1 "+5V" H 1815 823 50  0000 C CNN
+F 2 "" H 1800 650 50  0001 C CNN
+F 3 "" H 1800 650 50  0001 C CNN
+	1    1800 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 650  1800 900 
+Wire Wire Line
+	1900 900  1800 900 
+Connection ~ 1800 900 
+Wire Wire Line
+	4250 2150 4600 2150
+Wire Wire Line
+	3950 1850 4250 1850
+Wire Wire Line
+	4250 1850 4450 1850
+Connection ~ 4250 1850
+$Comp
+L Device:C C?
+U 1 1 5F200937
+P 4250 2000
+F 0 "C?" H 4365 2046 50  0000 L CNN
+F 1 "22p" H 4365 1955 50  0000 L CNN
+F 2 "" H 4288 1850 50  0001 C CNN
+F 3 "~" H 4250 2000 50  0001 C CNN
+	1    4250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F205A98
+P 2150 800
+F 0 "C?" V 1898 800 50  0000 C CNN
+F 1 "10u" V 1989 800 50  0000 C CNN
+F 2 "" H 2188 650 50  0001 C CNN
+F 3 "~" H 2150 800 50  0001 C CNN
+	1    2150 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 900  1900 800 
+Wire Wire Line
+	1900 800  2000 800 
+Connection ~ 1900 900 
+$Comp
+L power:GND #PWR?
+U 1 1 5F20711E
+P 2300 800
+F 0 "#PWR?" H 2300 550 50  0001 C CNN
+F 1 "GND" V 2305 672 50  0000 R CNN
+F 2 "" H 2300 800 50  0001 C CNN
+F 3 "" H 2300 800 50  0001 C CNN
+	1    2300 800 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2400 2900 2    50   Input ~ 0
+RXD
+Text GLabel 2400 3000 2    50   Input ~ 0
+TXD
+Text GLabel 2400 3300 2    50   Input ~ 0
+XCK
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5F209456
+P 6650 1050
+F 0 "J?" H 6707 1517 50  0000 C CNN
+F 1 "USB_B_Micro" H 6707 1426 50  0000 C CNN
+F 2 "" H 6800 1000 50  0001 C CNN
+F 3 "~" H 6800 1000 50  0001 C CNN
+	1    6650 1050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 1400
+NoConn ~ 1200 1500
+$Comp
+L Device:C C?
+U 1 1 5F20AD19
+P 1000 1200
+F 0 "C?" V 748 1200 50  0000 C CNN
+F 1 "0.1u" V 839 1200 50  0000 C CNN
+F 2 "" H 1038 1050 50  0001 C CNN
+F 3 "~" H 1000 1200 50  0001 C CNN
+	1    1000 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 1200 1150 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5F20CF79
+P 750 1200
+F 0 "#PWR?" H 750 950 50  0001 C CNN
+F 1 "GND" H 755 1027 50  0000 C CNN
+F 2 "" H 750 1200 50  0001 C CNN
+F 3 "" H 750 1200 50  0001 C CNN
+	1    750  1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1200 750  1200
+Wire Wire Line
+	6550 1450 6650 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5F20DAE4
+P 6650 1450
+F 0 "#PWR?" H 6650 1200 50  0001 C CNN
+F 1 "GND" H 6655 1277 50  0000 C CNN
+F 2 "" H 6650 1450 50  0001 C CNN
+F 3 "" H 6650 1450 50  0001 C CNN
+	1    6650 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 1450
+Text GLabel 2400 2700 2    50   Input ~ 0
+Reset
+$Comp
+L LED:WS2812B D?
+U 1 1 5F20ED09
+P 6950 2600
+F 0 "D?" H 7294 2646 50  0000 L CNN
+F 1 "WS2812B" H 7294 2555 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7000 2300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7050 2225 50  0001 L TNN
+	1    6950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F2100A2
+P 8100 2600
+F 0 "D?" H 8444 2646 50  0000 L CNN
+F 1 "WS2812B" H 8444 2555 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8150 2300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8200 2225 50  0001 L TNN
+	1    8100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F21085C
+P 9250 2600
+F 0 "D?" H 9594 2646 50  0000 L CNN
+F 1 "WS2812B" H 9594 2555 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9300 2300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9350 2225 50  0001 L TNN
+	1    9250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F211316
+P 10400 2600
+F 0 "D?" H 10744 2646 50  0000 L CNN
+F 1 "WS2812B" H 10744 2555 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10450 2300 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10500 2225 50  0001 L TNN
+	1    10400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F21643F
+P 6500 2900
+F 0 "#PWR?" H 6500 2650 50  0001 C CNN
+F 1 "GND" H 6505 2727 50  0000 C CNN
+F 2 "" H 6500 2900 50  0001 C CNN
+F 3 "" H 6500 2900 50  0001 C CNN
+	1    6500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2900 6950 2900
+Wire Wire Line
+	10400 2900 9250 2900
+Connection ~ 6950 2900
+Connection ~ 8100 2900
+Wire Wire Line
+	8100 2900 6950 2900
+Connection ~ 9250 2900
+Wire Wire Line
+	9250 2900 8100 2900
+Text GLabel 2400 3100 2    50   Input ~ 0
+D1
+Text GLabel 6650 2600 0    50   Input ~ 0
+D1
+Wire Wire Line
+	7250 2600 7800 2600
+Wire Wire Line
+	8400 2600 8950 2600
+Wire Wire Line
+	9550 2600 10100 2600
+$Comp
+L power:+5V #PWR?
+U 1 1 5F21A3E9
+P 6300 2300
+F 0 "#PWR?" H 6300 2150 50  0001 C CNN
+F 1 "+5V" H 6315 2473 50  0000 C CNN
+F 2 "" H 6300 2300 50  0001 C CNN
+F 3 "" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2300 6950 2300
+Connection ~ 6950 2300
+Wire Wire Line
+	6950 2300 8100 2300
+Connection ~ 8100 2300
+Wire Wire Line
+	8100 2300 9250 2300
+Connection ~ 9250 2300
+Wire Wire Line
+	9250 2300 10400 2300
+Text GLabel 10700 2600 1    50   Input ~ 0
+LED_ROW2
+$Comp
+L LED:WS2812B D?
+U 1 1 5F21E0BC
+P 6900 3650
+F 0 "D?" H 7244 3696 50  0000 L CNN
+F 1 "WS2812B" H 7244 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6950 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7000 3275 50  0001 L TNN
+	1    6900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F21E0C2
+P 8050 3650
+F 0 "D?" H 8394 3696 50  0000 L CNN
+F 1 "WS2812B" H 8394 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8100 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8150 3275 50  0001 L TNN
+	1    8050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F21E0C8
+P 9200 3650
+F 0 "D?" H 9544 3696 50  0000 L CNN
+F 1 "WS2812B" H 9544 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9250 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9300 3275 50  0001 L TNN
+	1    9200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F21E0CE
+P 10350 3650
+F 0 "D?" H 10694 3696 50  0000 L CNN
+F 1 "WS2812B" H 10694 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10400 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10450 3275 50  0001 L TNN
+	1    10350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F21E0D4
+P 6450 3950
+F 0 "#PWR?" H 6450 3700 50  0001 C CNN
+F 1 "GND" H 6455 3777 50  0000 C CNN
+F 2 "" H 6450 3950 50  0001 C CNN
+F 3 "" H 6450 3950 50  0001 C CNN
+	1    6450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3950 6900 3950
+Wire Wire Line
+	10350 3950 9200 3950
+Connection ~ 6900 3950
+Connection ~ 8050 3950
+Wire Wire Line
+	8050 3950 6900 3950
+Connection ~ 9200 3950
+Wire Wire Line
+	9200 3950 8050 3950
+Text GLabel 6600 3650 0    50   Input ~ 0
+LED_ROW2
+Wire Wire Line
+	7200 3650 7750 3650
+Wire Wire Line
+	8350 3650 8900 3650
+Wire Wire Line
+	9500 3650 10050 3650
+$Comp
+L power:+5V #PWR?
+U 1 1 5F21E0E5
+P 6250 3350
+F 0 "#PWR?" H 6250 3200 50  0001 C CNN
+F 1 "+5V" H 6265 3523 50  0000 C CNN
+F 2 "" H 6250 3350 50  0001 C CNN
+F 3 "" H 6250 3350 50  0001 C CNN
+	1    6250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3350 6900 3350
+Connection ~ 6900 3350
+Wire Wire Line
+	6900 3350 8050 3350
+Connection ~ 8050 3350
+Wire Wire Line
+	8050 3350 9200 3350
+Connection ~ 9200 3350
+Wire Wire Line
+	9200 3350 10350 3350
+Text GLabel 10650 3650 1    50   Input ~ 0
+LED_ROW3
+$Comp
+L LED:WS2812B D?
+U 1 1 5F2212F8
+P 6900 4700
+F 0 "D?" H 7244 4746 50  0000 L CNN
+F 1 "WS2812B" H 7244 4655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6950 4400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7000 4325 50  0001 L TNN
+	1    6900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F2212FE
+P 8050 4700
+F 0 "D?" H 8394 4746 50  0000 L CNN
+F 1 "WS2812B" H 8394 4655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8100 4400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8150 4325 50  0001 L TNN
+	1    8050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F221304
+P 9200 4700
+F 0 "D?" H 9544 4746 50  0000 L CNN
+F 1 "WS2812B" H 9544 4655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9250 4400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9300 4325 50  0001 L TNN
+	1    9200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F22130A
+P 10350 4700
+F 0 "D?" H 10694 4746 50  0000 L CNN
+F 1 "WS2812B" H 10694 4655 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10400 4400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10450 4325 50  0001 L TNN
+	1    10350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F221310
+P 6450 5000
+F 0 "#PWR?" H 6450 4750 50  0001 C CNN
+F 1 "GND" H 6455 4827 50  0000 C CNN
+F 2 "" H 6450 5000 50  0001 C CNN
+F 3 "" H 6450 5000 50  0001 C CNN
+	1    6450 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5000 6900 5000
+Wire Wire Line
+	10350 5000 9200 5000
+Connection ~ 6900 5000
+Connection ~ 8050 5000
+Wire Wire Line
+	8050 5000 6900 5000
+Connection ~ 9200 5000
+Wire Wire Line
+	9200 5000 8050 5000
+Text GLabel 6600 4700 0    50   Input ~ 0
+LED_ROW3
+Wire Wire Line
+	7200 4700 7750 4700
+Wire Wire Line
+	8350 4700 8900 4700
+Wire Wire Line
+	9500 4700 10050 4700
+$Comp
+L power:+5V #PWR?
+U 1 1 5F221321
+P 6250 4400
+F 0 "#PWR?" H 6250 4250 50  0001 C CNN
+F 1 "+5V" H 6265 4573 50  0000 C CNN
+F 2 "" H 6250 4400 50  0001 C CNN
+F 3 "" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4400 6900 4400
+Connection ~ 6900 4400
+Wire Wire Line
+	6900 4400 8050 4400
+Connection ~ 8050 4400
+Wire Wire Line
+	8050 4400 9200 4400
+Connection ~ 9200 4400
+Wire Wire Line
+	9200 4400 10350 4400
+Text GLabel 10650 4700 1    50   Input ~ 0
+LED_ROW4
+$Comp
+L LED:WS2812B D?
+U 1 1 5F236B54
+P 6900 5750
+F 0 "D?" H 7244 5796 50  0000 L CNN
+F 1 "WS2812B" H 7244 5705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6950 5450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7000 5375 50  0001 L TNN
+	1    6900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F236B5A
+P 8050 5750
+F 0 "D?" H 8394 5796 50  0000 L CNN
+F 1 "WS2812B" H 8394 5705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8100 5450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8150 5375 50  0001 L TNN
+	1    8050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F236B60
+P 9200 5750
+F 0 "D?" H 9544 5796 50  0000 L CNN
+F 1 "WS2812B" H 9544 5705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9250 5450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9300 5375 50  0001 L TNN
+	1    9200 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5F236B66
+P 10350 5750
+F 0 "D?" H 10694 5796 50  0000 L CNN
+F 1 "WS2812B" H 10694 5705 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10400 5450 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10450 5375 50  0001 L TNN
+	1    10350 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F236B6C
+P 6450 6050
+F 0 "#PWR?" H 6450 5800 50  0001 C CNN
+F 1 "GND" H 6455 5877 50  0000 C CNN
+F 2 "" H 6450 6050 50  0001 C CNN
+F 3 "" H 6450 6050 50  0001 C CNN
+	1    6450 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6050 6900 6050
+Wire Wire Line
+	10350 6050 9200 6050
+Connection ~ 6900 6050
+Connection ~ 8050 6050
+Wire Wire Line
+	8050 6050 6900 6050
+Connection ~ 9200 6050
+Wire Wire Line
+	9200 6050 8050 6050
+Text GLabel 6600 5750 0    50   Input ~ 0
+LED_ROW4
+Wire Wire Line
+	7200 5750 7750 5750
+Wire Wire Line
+	8350 5750 8900 5750
+Wire Wire Line
+	9500 5750 10050 5750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F236B7D
+P 6250 5450
+F 0 "#PWR?" H 6250 5300 50  0001 C CNN
+F 1 "+5V" H 6265 5623 50  0000 C CNN
+F 2 "" H 6250 5450 50  0001 C CNN
+F 3 "" H 6250 5450 50  0001 C CNN
+	1    6250 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5450 6900 5450
+Connection ~ 6900 5450
+Wire Wire Line
+	6900 5450 8050 5450
+Connection ~ 8050 5450
+Wire Wire Line
+	8050 5450 9200 5450
+Connection ~ 9200 5450
+Wire Wire Line
+	9200 5450 10350 5450
+Text GLabel 10650 5750 1    50   Input ~ 0
+LED_ROW4
+$EndSCHEMATC
